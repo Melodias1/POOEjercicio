@@ -23,20 +23,18 @@ public class Student {
 				
 			}
 	       public Student(String firstName, String lastName) {
-				this(firstName,lastName,000000,0,1);
+				this(firstName, lastName,000000,0,1);
 				
 			}
 	       
 	       
 	       
-	       
-	         
-
-		public String printFullName(){
+	       public String printFullName(){
 				
 	    	      return "el nombre del alumno es: "+ this.firstName+" "+ this.lastName;
 	    	   }
 
+	       
 	    	   public Boolean isApproved(){
 	    	       //TODO implement: should return true if grade >= 60
 	    		   if(grade >=60) {

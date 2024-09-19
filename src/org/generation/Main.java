@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Student eli = new Student("eliza", "Martinez", 02020, 60, 1);
-		
+	
 		Student luis = new Student("luis", "ramirez", 03030, 80, 1);
 		Student vale = new Student("vale", "martinez", 06060, 100, 1);
 		Courses mate = new  Courses("mate", "JC", 1);
@@ -27,6 +27,7 @@ public class Main {
 		System.out.println(mate.countStudents());
 		
 		mate.bestGrade();
+		mate.avgGrade();
 		
 		
 	}
