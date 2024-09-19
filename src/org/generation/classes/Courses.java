@@ -27,7 +27,7 @@ public class Courses {
 		      //TODO add the student to the collection
 			if (student!=null) {
 				enrolledStudents.add(student);
-				System.out.println("estudiante agregado con exito");
+				System.out.println("estudiante "+ student.getName() +" agregado con exito");
 			}else {
 				System.out.println("no se pudo agregar al estudiante");
 			}
@@ -52,14 +52,15 @@ public class Courses {
 		       // Hint: check if that really is this student
 			   if(enrolledStudents.contains(student)) {
 				   enrolledStudents.remove(student);
+				   System.out.println("el estudiante "+ student.getName()+" fue removido con exito");
 			   }else {
 				   System.out.println("student doesnt exist in this course");
 			   }
 		   }
 
-		   public int countStudents(){
+		   public String countStudents(){
 		      int total= enrolledStudents.size();
-		       return total;
+		       return "el total de estudiantes es: "+total;
 		   }
 		   
 		   public void bestGrade(){
